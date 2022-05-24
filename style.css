@@ -1,0 +1,25 @@
+body{
+    width: 380px; 
+    height: 170px; 
+    /* background: #262523 !important; */
+    background: black !important;
+}
+
+button.customgreen{
+    border: 1px solid black !important;
+    width:100%;
+}
+.customgreen{
+    background :black !important;
+    color:green !important;
+
+}
+input.customgreen{
+    border: 0 2px 0 2px;
+    border-color: green;    
+    
+}
+.customgreen:focus{
+    box-shadow: none !important;
+    border-color: lightgreen !important;
+}

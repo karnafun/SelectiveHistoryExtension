@@ -1,0 +1,28 @@
+{
+  "name": "Selective History",
+  "description": "Prevents the saving of history in requested domains",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": [
+    "storage",
+    "declarativeContent",
+    "activeTab",
+    "scripting",
+    "history",
+    "search",
+    "browsingData",
+    "cookies"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["removeHistory.js"]
+    }
+  ]
+}

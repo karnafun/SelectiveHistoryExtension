@@ -13,6 +13,7 @@
   </head>
   <body>
     <!-- Input -->
+
     <div class="input-group mb-3">
       <span class="input-group-text customgreen">http://www.</span>
       <input
@@ -20,12 +21,20 @@
         id="txt_url"
         class="form-control customgreen"
         aria-label="Amount (to the nearest dollar)"
+        placeholder="domain name"
       />
       <span class="input-group-text customgreen">.com/org/etc</span>
+      <button id="btn_main" class="btn btn-dark customgreen">Add Domain</button>
     </div>
-
+    <div id="select_wrapper">
+      <select
+        class="customgreen main_select"
+        name="domains"
+        id="select_domains"
+        multiple
+      ></select>
+    </div>
     <!-- Button -->
-    <button id="btn_main" class="btn btn-dark customgreen">Add Domain</button>
 
     <!-- <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

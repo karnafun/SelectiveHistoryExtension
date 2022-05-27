@@ -14,22 +14,16 @@
     "cookies"
   ],
   "background": {
-    "service_worker": "background.js"
+    "service_worker": "/src/background.js"
   },
   "action": {
-    "default_popup": "popup.html",
+    "default_popup": "/src/popup.html",
     "icons": {
       "16": "/images/icon16.png",
       "24": "/images/icon24.png",
       "32": "/images/icon32.png"
     }
   },
-  "content_scripts": [
-    {
-      "matches": ["*://*/*"],
-      "js": ["removeHistory.js"]
-    }
-  ],
   "icons": {
     "16": "/images/icon16.png",
     "48": "/images/icon48.png",

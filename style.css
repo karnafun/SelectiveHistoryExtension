@@ -23,3 +23,6 @@ input.customgreen{
     box-shadow: none !important;
     border-color: lightgreen !important;
 }
+.main_select{
+    width:150px;    
+}
